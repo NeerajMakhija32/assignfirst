@@ -1,0 +1,98 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: lightblue;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: dotted;
+  color: black;
+  font-weight: bold;
+  }
+
+.navbar a:hover {
+  color: darkblue;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.about p {
+  max-width: 400px;
+  font-size: 1.2rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.skill-box {
+  border: 2px solid rgb(204, 204, 204);
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.h3{
+    background-color: rgb(103, 237, 103);
+    padding: 1rem;
+    font-size: auto;
+    border-radius: 5px;
+    text-decoration: wavy;
+    text-align: center;
+}
+
+footer {
+  background-color: rgb(12, 236, 161);
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(75, 204, 247);
+  }
+
+  .about {
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid rebeccapurple;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+}
